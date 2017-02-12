@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_subjects"
+            android:icon="@drawable/book"
+            android:title="Subjects" />
+        <item
+            android:id="@+id/nav_announce"
+            android:icon="@drawable/speaker"
+            android:title="Announcements" />
+        <item
+            android:id="@+id/nav_tt"
+            android:icon="@android:drawable/ic_menu_my_calendar"
+            android:title="Time Table" />
+        <item
+            android:id="@+id/nav_pls"
+            android:icon="@drawable/pls"
+            android:title="Placement" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Contact Us" />
+        </menu>
+    </item>
+
+</menu>
