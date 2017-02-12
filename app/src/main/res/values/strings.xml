@@ -10,4 +10,16 @@
     <string name="title_activity_ai">AI</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_cd">CD</string>
+
+    <string name="title_activity_ds">DS</string>
+
+    <string name="title_activity_s">SA</string>
+
+    <string name="title_activity_mc">MC</string>
+
+    <string name="title_activity_tqm">TQM</string>
+
+    <string name="title_activity_cdlab">CDLab</string>
 </resources>
