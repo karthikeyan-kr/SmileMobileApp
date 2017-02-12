@@ -1,6 +1,7 @@
 package me.lionelfaber.smileappofflinenew;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.support.design.widget.FloatingActionButton;
@@ -88,6 +89,6 @@ public class Subjects extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        
     }
-
 }
