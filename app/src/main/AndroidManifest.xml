@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="me.lionelfaber.smileappofflinenew">
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -26,6 +27,16 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="me.lionelfaber.smileappofflinenew.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AI"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_ai"
+            android:parentActivityName=".Subjects"
+            android:theme="@style/FullscreenTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="me.lionelfaber.smileappofflinenew.Subjects" />
         </activity>
     </application>
 

@@ -15,7 +15,7 @@
 
     <TableLayout
         android:layout_width="fill_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
@@ -29,26 +29,26 @@
 
             <ImageButton
                 android:layout_width="125dp"
-                android:layout_height="110dp"
+                android:layout_height="130dp"
                 android:padding="5dp"
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/ai"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
-                android:id="@+id/imageButton1"
+                android:id="@+id/imageButtonn1"
                 android:layout_gravity="center"
                 android:background="?android:attr/selectableItemBackground"/>
 
             <ImageButton
                 android:layout_width="125dp"
-                android:layout_height="110dp"
+                android:layout_height="130dp"
                 android:scaleType="fitCenter"
                 android:padding="5dp"
                 app:srcCompat="@drawable/cd"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
                 android:layout_gravity="center"
-                android:id="@+id/imageButton2"
+                android:id="@+id/imageButtonn2"
                 android:background="?android:attr/selectableItemBackground"/>
 
 
@@ -61,26 +61,26 @@
 
             <ImageButton
                 android:layout_width="125dp"
-                android:layout_height="110dp"
+                android:layout_height="130dp"
                 android:padding="5dp"
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/sa"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
                 android:layout_gravity="center"
-                android:id="@+id/imageButton3"
+                android:id="@+id/imageButtonn3"
                 android:background="?android:attr/selectableItemBackground"/>
 
             <ImageButton
                 android:layout_width="125dp"
-                android:layout_height="110dp"
+                android:layout_height="130dp"
                 android:scaleType="fitCenter"
                 android:padding="5dp"
                 app:srcCompat="@drawable/ds"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
                 android:layout_gravity="center"
-                android:id="@+id/imageButton4"
+                android:id="@+id/imageButtonn4"
                 android:background="?android:attr/selectableItemBackground"/>
         </TableRow>
 
@@ -91,36 +91,36 @@
             <ImageButton
                 android:layout_width="125dp"
                 android:padding="5dp"
-                android:layout_height="110dp"
+                android:layout_height="130dp"
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/mobile"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
                 android:layout_gravity="center"
-                android:id="@+id/imageButton5"
+                android:id="@+id/imageButtonn5"
                 android:background="?android:attr/selectableItemBackground"/>
             <ImageButton
                 android:layout_width="125dp"
-                android:layout_height="110dp"
+                android:layout_height="130dp"
                 android:scaleType="fitCenter"
                 android:padding="5dp"
                 app:srcCompat="@drawable/tqm"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
                 android:layout_gravity="center"
-                android:id="@+id/imageButton6"
+                android:id="@+id/imageButtonn6"
                 android:background="?android:attr/selectableItemBackground"/>
         </TableRow>
         <ImageButton
             android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_height="130dp"
             android:padding="5dp"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/compilerlab"
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
             android:layout_gravity="center"
-            android:id="@+id/imageButton7"
+            android:id="@+id/imageButtonn7"
             android:background="?android:attr/selectableItemBackground"/>
     </TableLayout>
 
