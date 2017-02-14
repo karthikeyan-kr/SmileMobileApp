@@ -25,13 +25,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
-        android:fontFamily="cursive"
         android:textSize="32sp"
-        android:textColor="#00aa00"
+        android:textColor="@android:color/holo_red_light"
         android:gravity="center"
         android:layout_above="@+id/tableLayout"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="11dp" />
+        android:layout_marginStart="11dp"/>
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -48,7 +47,7 @@
             <ImageButton
                 android:layout_width="20mm"
                 android:layout_height="20mm"
-                app:srcCompat="@drawable/book"
+                app:srcCompat="@drawable/library"
                 android:layout_alignTop="@+id/tableLayout"
                 android:id="@+id/imageButton1"
                 android:maxHeight="3mm"
@@ -58,15 +57,37 @@
                 android:scaleType="fitCenter"
                 android:background="?android:attr/selectableItemBackground" />
 
+
             <ImageButton
                 android:layout_width="20mm"
                 android:layout_height="20mm"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/speaker"
+                app:srcCompat="@drawable/lecture"
                 android:padding="1mm"
                 android:id="@+id/imageButton2"
                 android:layout_gravity="center_horizontal"
                 android:background="?android:attr/selectableItemBackground"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_gravity="center">
+            <TextView
+                android:text="Subjects"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:gravity="center"
+                android:textSize="40px"/>
+
+            <TextView
+                android:text="Information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:gravity="center"
+                android:textSize="40px"/>
 
         </TableRow>
 
@@ -77,7 +98,7 @@
                 android:layout_width="20mm"
                 android:layout_height="20mm"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/tt"
+                app:srcCompat="@drawable/notebook"
                 android:id="@+id/imageButton3"
                 android:layout_gravity="center_horizontal"
                 android:padding="1mm"
@@ -87,11 +108,32 @@
                 android:layout_width="20mm"
                 android:layout_height="20mm"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/pls"
+                app:srcCompat="@drawable/brainstorm"
                 android:padding="1mm"
                 android:layout_gravity="center_horizontal"
                 android:id="@+id/imageButton4"
                 android:background="?android:attr/selectableItemBackground" />
+        </TableRow>
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_gravity="center">
+            <TextView
+                android:text="Time Table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:gravity="center"
+                android:textSize="40px"/>
+
+            <TextView
+                android:text="Placement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:gravity="center"
+                android:textSize="40px"/>
+
         </TableRow>
     </TableLayout>
 

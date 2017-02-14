@@ -17,7 +17,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageButton;
 
-import static me.lionelfaber.smileappofflinenew.R.drawable.ai;
+import static me.lionelfaber.smileappofflinenew.R.drawable.art;
 
 public class Subjects extends AppCompatActivity {
 

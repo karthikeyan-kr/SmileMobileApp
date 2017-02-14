@@ -28,11 +28,11 @@
             android:layout_gravity="center">
 
             <ImageButton
-                android:layout_width="125dp"
-                android:layout_height="130dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:padding="5dp"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/ai"
+                app:srcCompat="@drawable/art"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
                 android:id="@+id/imageButtonn1"
@@ -40,17 +40,38 @@
                 android:background="?android:attr/selectableItemBackground"/>
 
             <ImageButton
-                android:layout_width="125dp"
-                android:layout_height="130dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:scaleType="fitCenter"
                 android:padding="5dp"
-                app:srcCompat="@drawable/cd"
+                app:srcCompat="@drawable/compiler"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
                 android:layout_gravity="center"
                 android:id="@+id/imageButtonn2"
                 android:background="?android:attr/selectableItemBackground"/>
 
+
+        </TableRow>
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_gravity="center">
+            <TextView
+                android:text="Artificial\nIntelligence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:gravity="center"
+                android:textSize="30px"/>
+
+            <TextView
+                android:text="Compiler\nDesign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:gravity="center"
+                android:textSize="30px"/>
 
         </TableRow>
 
@@ -60,11 +81,11 @@
             android:layout_gravity="center_horizontal">
 
             <ImageButton
-                android:layout_width="125dp"
-                android:layout_height="130dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:padding="5dp"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/sa"
+                app:srcCompat="@drawable/soft"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
                 android:layout_gravity="center"
@@ -72,56 +93,105 @@
                 android:background="?android:attr/selectableItemBackground"/>
 
             <ImageButton
-                android:layout_width="125dp"
-                android:layout_height="130dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:scaleType="fitCenter"
                 android:padding="5dp"
-                app:srcCompat="@drawable/ds"
+                app:srcCompat="@drawable/sd"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
                 android:layout_gravity="center"
                 android:id="@+id/imageButtonn4"
                 android:background="?android:attr/selectableItemBackground"/>
         </TableRow>
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_gravity="center">
+            <TextView
+                android:text="Software\nArchitecture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:gravity="center"
+                android:textSize="30px"/>
 
+            <TextView
+                android:text="Distributed\nSystems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:gravity="center"
+                android:textSize="30px"/>
+
+        </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center">
             <ImageButton
-                android:layout_width="125dp"
+                android:layout_width="100dp"
                 android:padding="5dp"
-                android:layout_height="130dp"
+                android:layout_height="100dp"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/mobile"
+                app:srcCompat="@drawable/mc"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
                 android:layout_gravity="center"
                 android:id="@+id/imageButtonn5"
                 android:background="?android:attr/selectableItemBackground"/>
             <ImageButton
-                android:layout_width="125dp"
-                android:layout_height="130dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:scaleType="fitCenter"
                 android:padding="5dp"
-                app:srcCompat="@drawable/tqm"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
                 android:layout_gravity="center"
                 android:id="@+id/imageButtonn6"
-                android:background="?android:attr/selectableItemBackground"/>
+                android:background="?android:attr/selectableItemBackground"
+                app:srcCompat="@drawable/total" />
         </TableRow>
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_gravity="center">
+            <TextView
+                android:text="Mobile \n Computing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:gravity="center"
+                android:textSize="30px"/>
+
+            <TextView
+                android:text="Total Quality \n Management"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:gravity="center"
+                android:textSize="30px"/>
+
+        </TableRow>
+
         <ImageButton
             android:layout_width="100dp"
-            android:layout_height="130dp"
+            android:layout_height="100dp"
             android:padding="5dp"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/compilerlab"
+            app:srcCompat="@drawable/cdl"
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
             android:layout_gravity="center"
             android:id="@+id/imageButtonn7"
             android:background="?android:attr/selectableItemBackground"/>
+            <TextView
+                android:text="Compiler Design Lab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView7"
+                android:gravity="center"
+                android:textSize="30px"/>
     </TableLayout>
 
 </RelativeLayout>

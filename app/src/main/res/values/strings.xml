@@ -22,4 +22,6 @@
     <string name="title_activity_tqm">TQM</string>
 
     <string name="title_activity_cdlab">CDLab</string>
+
+    <string name="title_activity_time_table">TimeTable</string>
 </resources>
