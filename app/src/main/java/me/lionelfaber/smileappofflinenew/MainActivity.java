@@ -106,6 +106,8 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_announce) {
 
         } else if (id == R.id.nav_tt) {
+            Intent intent = new Intent(MainActivity.this, TimeTable.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_pls) {
 

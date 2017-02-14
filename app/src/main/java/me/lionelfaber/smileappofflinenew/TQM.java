@@ -45,7 +45,7 @@ public class TQM extends AppCompatActivity {
         mWebView = (WebView) findViewById(R.id.webview);
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        mWebView.loadUrl("https://sjit-it-batch14-18.github.io/onlinenotes/mobileapp/tqm/index.html");
+        mWebView.loadUrl("http://lionelfaber.me/tqm/");
         mVisible = true;
         mControlsView = findViewById(R.id.fullscreen_content_controls);
         //mContentView = findViewById(R.id.fullscreen_content);

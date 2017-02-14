@@ -45,7 +45,7 @@ public class SA extends AppCompatActivity {
         mWebView = (WebView) findViewById(R.id.webview);
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        mWebView.loadUrl("https://sjit-it-batch14-18.github.io/onlinenotes/site/index.html");
+        mWebView.loadUrl("http://lionelfaber.me/sa/");
         mVisible = true;
         mControlsView = findViewById(R.id.fullscreen_content_controls);
         //mContentView = findViewById(R.id.fullscreen_content);
