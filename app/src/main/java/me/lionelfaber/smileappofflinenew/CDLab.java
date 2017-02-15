@@ -1,6 +1,8 @@
 package me.lionelfaber.smileappofflinenew;
 
 import android.annotation.SuppressLint;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,6 +22,11 @@ public class CDLab extends AppCompatActivity {
      * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
      */
     private WebView mWebView;
+    private boolean isNetworkAvailable() {
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService( CONNECTIVITY_SERVICE );
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
+    }
     private static final boolean AUTO_HIDE = true;
 
     /**
@@ -43,8 +50,16 @@ public class CDLab extends AppCompatActivity {
 
         setContentView(R.layout.activity_ai);
         mWebView = (WebView) findViewById(R.id.webview);
-        WebSettings webSettings = mWebView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
+        mWebView.getSettings().setAppCacheMaxSize( 5 * 1024 * 1024 ); // 5MB
+        mWebView.getSettings().setAppCachePath( getApplicationContext().getCacheDir().getAbsolutePath() );
+        mWebView.getSettings().setAllowFileAccess( true );
+        mWebView.getSettings().setAppCacheEnabled( true );
+        mWebView.getSettings().setJavaScriptEnabled( true );
+        mWebView.getSettings().setCacheMode( WebSettings.LOAD_DEFAULT ); // load online by default
+
+        if ( !isNetworkAvailable() ) { // loading offline
+            mWebView.getSettings().setCacheMode( WebSettings.LOAD_CACHE_ELSE_NETWORK );
+        }
         mWebView.loadUrl("http://lionelfaber.me/cdl/");
         mVisible = true;
         mControlsView = findViewById(R.id.fullscreen_content_controls);
