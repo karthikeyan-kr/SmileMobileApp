@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
+import android.webkit.WebView;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -30,6 +31,7 @@ public class TimeTable extends AppCompatActivity {
      * and a change of the status and navigation bar.
      */
     private static final int UI_ANIMATION_DELAY = 300;
+    WebView webView;
     private final Handler mHideHandler = new Handler();
     //private View mContentView;
     private final Runnable mHidePart2Runnable = new Runnable() {
@@ -83,7 +85,9 @@ public class TimeTable extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_time_table);
-
+        webView = (WebView)findViewById(R.id.webview);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.loadUrl("https://github.com");
         mVisible = true;
         mControlsView = findViewById(R.id.fullscreen_content_controls);
         //mContentView = findViewById(R.id.fullscreen_content);
