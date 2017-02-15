@@ -9,7 +9,7 @@
         <item
             android:id="@+id/nav_announce"
             android:icon="@drawable/speaker"
-            android:title="Announcements" />
+            android:title="Information" />
         <item
             android:id="@+id/nav_tt"
             android:icon="@android:drawable/ic_menu_my_calendar"
@@ -22,10 +22,6 @@
 
     <item android:title="Communicate">
         <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
             <item
                 android:id="@+id/nav_contact"
                 android:icon="@drawable/ic_menu_send"

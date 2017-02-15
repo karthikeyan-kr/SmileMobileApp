@@ -3,8 +3,9 @@
     package="me.lionelfaber.smileappofflinenew">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -104,6 +105,21 @@
             android:name=".TimeTable"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_time_table"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".Info"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_info"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/FullscreenTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="me.lionelfaber.smileappofflinenew.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Placement"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_placement"
             android:theme="@style/FullscreenTheme"></activity>
     </application>
 

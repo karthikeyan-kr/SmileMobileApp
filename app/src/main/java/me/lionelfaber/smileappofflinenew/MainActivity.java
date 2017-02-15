@@ -44,6 +44,24 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
+        ImageButton info = (ImageButton)findViewById(R.id.imageButton2);
+        info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,Info.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton pls = (ImageButton)findViewById(R.id.imageButton4);
+        pls.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,Placement.class);
+                startActivity(intent);
+            }
+        });
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -104,16 +122,18 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
 
         } else if (id == R.id.nav_announce) {
+            Intent intent = new Intent(MainActivity.this,Info.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_tt) {
             Intent intent = new Intent(MainActivity.this, TimeTable.class);
             startActivity(intent);
 
         } else if (id == R.id.nav_pls) {
+            Intent intent = new Intent(MainActivity.this, Placement.class);
+            startActivity(intent);
 
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_contact) {
+        }else if (id == R.id.nav_contact) {
             Intent intent = new Intent (Intent.ACTION_VIEW , Uri.parse("mailto:" + "14itsjit@gmail.com"));
             intent.putExtra(Intent.EXTRA_SUBJECT, "Report from SMILE App");
             startActivity(intent);

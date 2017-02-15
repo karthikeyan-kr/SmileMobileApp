@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SmileAppOfflineNew</string>
+    <string name="app_name">Smile</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -8,8 +8,6 @@
     <string name="title_activity_subjects">Subjects</string>
 
     <string name="title_activity_ai">AI</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
 
     <string name="title_activity_cd">CD</string>
 
@@ -24,4 +22,8 @@
     <string name="title_activity_cdlab">CDLab</string>
 
     <string name="title_activity_time_table">TimeTable</string>
+
+    <string name="title_activity_info">Info</string>
+
+    <string name="title_activity_placement">Placement</string>
 </resources>
