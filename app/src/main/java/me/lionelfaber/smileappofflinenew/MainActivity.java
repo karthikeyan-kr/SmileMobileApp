@@ -18,6 +18,8 @@ import android.view.MenuItem;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -61,12 +63,25 @@ public class MainActivity extends AppCompatActivity
                 startActivity(intent);
             }
         });
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
+
+        final DrawerLayout mDrawerLayout = (DrawerLayout) this.findViewById(R.id.drawer_layout);
+        ImageButton fab = (ImageButton) findViewById(R.id.imgb);
+        Glide.with(this).load(R.drawable.arrow).into(fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mDrawerLayout.openDrawer(GravityCompat.START);
+            }
+        });
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
