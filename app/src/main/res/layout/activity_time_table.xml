@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-    tools:context="me.lionelfaber.smileappofflinenew.AI">
-
+    tools:context="me.lionelfaber.smileappofflinenew.TimeTable">
 
     <FrameLayout android:layout_width="220dp"
         android:layout_height="match_parent"

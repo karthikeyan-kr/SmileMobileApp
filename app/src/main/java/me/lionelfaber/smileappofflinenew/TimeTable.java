@@ -1,16 +1,24 @@
 package me.lionelfaber.smileappofflinenew;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+
+import java.sql.Time;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -117,6 +125,7 @@ public class TimeTable extends AppCompatActivity {
         // while interacting with the UI.
         //findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
     }
+
 
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {

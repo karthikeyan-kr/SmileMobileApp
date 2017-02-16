@@ -17,6 +17,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageButton;
 
+import com.bumptech.glide.Glide;
+
 import static me.lionelfaber.smileappofflinenew.R.drawable.art;
 
 public class Subjects extends AppCompatActivity {
@@ -26,8 +28,13 @@ public class Subjects extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_subjects);
 
+        final DrawerLayout mDrawerLayout = (DrawerLayout) this.findViewById(R.id.drawer_layout);
+        ImageButton fab = (ImageButton) findViewById(R.id.imgb);
+        Glide.with(this).load(R.drawable.arrow).into(fab);
+
 
         ImageButton ai = (ImageButton) findViewById(R.id.imageButtonn1);
+        Glide.with(this).load(R.drawable.art).into(ai);
         ai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,6 +44,7 @@ public class Subjects extends AppCompatActivity {
         });
 
         ImageButton cd = (ImageButton) findViewById(R.id.imageButtonn2);
+        Glide.with(this).load(R.drawable.compiler).into(cd);
         cd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,6 +54,7 @@ public class Subjects extends AppCompatActivity {
         });
 
         ImageButton ds = (ImageButton) findViewById(R.id.imageButtonn4);
+        Glide.with(this).load(R.drawable.sd).into(ds);
         ds.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,6 +64,7 @@ public class Subjects extends AppCompatActivity {
         });
 
         ImageButton mc = (ImageButton) findViewById(R.id.imageButtonn5);
+        Glide.with(this).load(R.drawable.mc).into(mc);
         mc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,6 +74,7 @@ public class Subjects extends AppCompatActivity {
         });
 
         ImageButton sa = (ImageButton) findViewById(R.id.imageButtonn3);
+        Glide.with(this).load(R.drawable.soft).into(sa);
         sa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -73,6 +84,7 @@ public class Subjects extends AppCompatActivity {
         });
 
         ImageButton tqm = (ImageButton) findViewById(R.id.imageButtonn6);
+        Glide.with(this).load(R.drawable.total).into(tqm);
         tqm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -82,6 +94,7 @@ public class Subjects extends AppCompatActivity {
         });
 
         ImageButton cdl = (ImageButton) findViewById(R.id.imageButtonn7);
+        Glide.with(this).load(R.drawable.cdl).into(cdl);
         cdl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

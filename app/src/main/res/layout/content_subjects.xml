@@ -32,7 +32,6 @@
                 android:layout_height="100dp"
                 android:padding="5dp"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/art"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
                 android:id="@+id/imageButtonn1"
@@ -44,7 +43,6 @@
                 android:layout_height="100dp"
                 android:scaleType="fitCenter"
                 android:padding="5dp"
-                app:srcCompat="@drawable/compiler"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
                 android:layout_gravity="center"
@@ -85,7 +83,6 @@
                 android:layout_height="100dp"
                 android:padding="5dp"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/soft"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
                 android:layout_gravity="center"
@@ -97,7 +94,6 @@
                 android:layout_height="100dp"
                 android:scaleType="fitCenter"
                 android:padding="5dp"
-                app:srcCompat="@drawable/sd"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
                 android:layout_gravity="center"
@@ -134,7 +130,6 @@
                 android:padding="5dp"
                 android:layout_height="100dp"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/mc"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
                 android:layout_gravity="center"
@@ -149,8 +144,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_gravity="center"
                 android:id="@+id/imageButtonn6"
-                android:background="?android:attr/selectableItemBackground"
-                app:srcCompat="@drawable/total" />
+                android:background="?android:attr/selectableItemBackground" />
         </TableRow>
         <TableRow
             android:layout_height="match_parent"
@@ -179,7 +173,6 @@
             android:layout_height="100dp"
             android:padding="5dp"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/cdl"
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
             android:layout_gravity="center"

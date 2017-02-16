@@ -16,10 +16,9 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/smile"
         android:layout_above="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:id="@+id/imageView7" />
+        android:id="@+id/imageView" />
     <TextView
         android:text="@string/intro"
         android:layout_width="wrap_content"
@@ -47,7 +46,6 @@
             <ImageButton
                 android:layout_width="20mm"
                 android:layout_height="20mm"
-                app:srcCompat="@drawable/library"
                 android:layout_alignTop="@+id/tableLayout"
                 android:id="@+id/imageButton1"
                 android:maxHeight="3mm"
@@ -62,7 +60,6 @@
                 android:layout_width="20mm"
                 android:layout_height="20mm"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/lecture"
                 android:padding="1mm"
                 android:id="@+id/imageButton2"
                 android:layout_gravity="center_horizontal"
@@ -98,7 +95,6 @@
                 android:layout_width="20mm"
                 android:layout_height="20mm"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/notebook"
                 android:id="@+id/imageButton3"
                 android:layout_gravity="center_horizontal"
                 android:padding="1mm"
@@ -108,7 +104,6 @@
                 android:layout_width="20mm"
                 android:layout_height="20mm"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/brainstorm"
                 android:padding="1mm"
                 android:layout_gravity="center_horizontal"
                 android:id="@+id/imageButton4"

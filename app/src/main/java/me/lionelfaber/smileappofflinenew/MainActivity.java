@@ -16,6 +16,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
@@ -28,8 +29,11 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ImageView img = (ImageView)findViewById(R.id.imageView);
+        Glide.with(this).load(R.drawable.smile).into(img);
 
         ImageButton sub = (ImageButton) findViewById(R.id.imageButton1);
+        Glide.with(this).load(R.drawable.library).into(sub);
         sub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,6 +42,8 @@ public class MainActivity extends AppCompatActivity
             }
         });
         ImageButton tt = (ImageButton)findViewById(R.id.imageButton3);
+        Glide.with(this).load(R.drawable.notebook).into(tt);
+
         tt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,6 +53,8 @@ public class MainActivity extends AppCompatActivity
         });
 
         ImageButton info = (ImageButton)findViewById(R.id.imageButton2);
+        Glide.with(this).load(R.drawable.lecture).into(info);
+
         info.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,6 +64,7 @@ public class MainActivity extends AppCompatActivity
         });
 
         ImageButton pls = (ImageButton)findViewById(R.id.imageButton4);
+        Glide.with(this).load(R.drawable.brainstorm).into(pls);
         pls.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
