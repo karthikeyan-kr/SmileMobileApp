@@ -28,7 +28,7 @@
         <ImageView
             android:layout_width="214dp"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/schedule"
+            app:srcCompat="@drawable/schedulee"
             android:id="@+id/imageView9" />
 
 
