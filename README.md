@@ -16,7 +16,7 @@ Contains the regular class time table along with the schedule of other events.<b
 Contains a few questions and answers for Placement Training.<br>
 ![Placement question](screenshots/5.png) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Placement answers](screenshots/6.png)
 ### Information
-Contains updates for students along with daily DCT questions, exam time table etc.
+Contains updates for students along with daily DCT questions, exam time table etc.<br>
 ![info](screenshots/4.png)
 
 ## Technical specifications
