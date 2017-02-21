@@ -17,6 +17,9 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
 
 import java.sql.Time;
 
@@ -100,6 +103,7 @@ public class TimeTable extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
         setContentView(R.layout.activity_time_table);
         webView = (WebView)findViewById(R.id.webview);
         webView.getSettings().setAppCacheMaxSize( 5 * 1024 * 1024 ); // 5MB
@@ -114,6 +118,9 @@ public class TimeTable extends AppCompatActivity {
         }
         webView.loadUrl("https://sjit-it-batch14-18.github.io/onlinenotes/tt.html");
         mVisible = true;
+        ImageView img = (ImageView)findViewById(R.id.imageView9);
+        Glide.with(this).load(R.drawable.ttfinal).into(img);
+
         mControlsView = findViewById(R.id.fullscreen_content_controls);
         //mContentView = findViewById(R.id.fullscreen_content);
 

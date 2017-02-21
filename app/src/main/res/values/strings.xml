@@ -26,4 +26,8 @@
     <string name="title_activity_info">Info</string>
 
     <string name="title_activity_placement">Placement</string>
+
+    <string name="title_activity_mad_lab">MadLab</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

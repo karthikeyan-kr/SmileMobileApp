@@ -16,17 +16,12 @@ import android.webkit.WebView;
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
  */
-public class DS extends AppCompatActivity {
+public class MadLab extends AppCompatActivity {
     /**
      * Whether or not the system UI should be auto-hidden after
      * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
      */
     private WebView mWebView;
-    private boolean isNetworkAvailable() {
-        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService( CONNECTIVITY_SERVICE );
-        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
-        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
-    }
     private static final boolean AUTO_HIDE = true;
 
     /**
@@ -44,12 +39,19 @@ public class DS extends AppCompatActivity {
     private View mControlsView;
     private boolean mVisible;
 
+    private boolean isNetworkAvailable() {
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService( CONNECTIVITY_SERVICE );
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_ai);
         mWebView = (WebView) findViewById(R.id.webview);
+
         mWebView.getSettings().setAppCacheMaxSize( 5 * 1024 * 1024 ); // 5MB
         mWebView.getSettings().setAppCachePath( getApplicationContext().getCacheDir().getAbsolutePath() );
         mWebView.getSettings().setAllowFileAccess( true );
@@ -60,7 +62,7 @@ public class DS extends AppCompatActivity {
         if ( !isNetworkAvailable() ) { // loading offline
             mWebView.getSettings().setCacheMode( WebSettings.LOAD_CACHE_ELSE_NETWORK );
         }
-        mWebView.loadUrl("http://lionelfaber.me/ds/");
+        mWebView.loadUrl("http://lionelfaber.me/madlab/");
         mVisible = true;
         mControlsView = findViewById(R.id.fullscreen_content_controls);
         //mContentView = findViewById(R.id.fullscreen_content);

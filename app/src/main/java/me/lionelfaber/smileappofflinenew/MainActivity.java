@@ -72,8 +72,7 @@ public class MainActivity extends AppCompatActivity
                 startActivity(intent);
             }
         });
-        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        //setSupportActionBar(toolbar);
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 

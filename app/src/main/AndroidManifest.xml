@@ -15,8 +15,8 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,9 +25,9 @@
         </activity>
         <activity
             android:name=".Subjects"
-            android:screenOrientation="portrait"
             android:label="@string/title_activity_subjects"
             android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -37,8 +37,8 @@
             android:name=".AI"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_ai"
-            android:screenOrientation="portrait"
             android:parentActivityName=".Subjects"
+            android:screenOrientation="portrait"
             android:theme="@style/FullscreenTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -48,8 +48,8 @@
             android:name=".CD"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_cd"
-            android:screenOrientation="portrait"
             android:parentActivityName=".Subjects"
+            android:screenOrientation="portrait"
             android:theme="@style/FullscreenTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -59,8 +59,8 @@
             android:name=".DS"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_ds"
-            android:screenOrientation="portrait"
             android:parentActivityName=".Subjects"
+            android:screenOrientation="portrait"
             android:theme="@style/FullscreenTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -70,8 +70,8 @@
             android:name=".SA"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_s"
-            android:screenOrientation="portrait"
             android:parentActivityName=".Subjects"
+            android:screenOrientation="portrait"
             android:theme="@style/FullscreenTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -81,8 +81,8 @@
             android:name=".MC"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_mc"
-            android:screenOrientation="portrait"
             android:parentActivityName=".Subjects"
+            android:screenOrientation="portrait"
             android:theme="@style/FullscreenTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -92,8 +92,8 @@
             android:name=".TQM"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_tqm"
-            android:screenOrientation="portrait"
             android:parentActivityName=".Subjects"
+            android:screenOrientation="portrait"
             android:theme="@style/FullscreenTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -103,8 +103,8 @@
             android:name=".CDLab"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_cdlab"
-            android:screenOrientation="portrait"
             android:parentActivityName=".Subjects"
+            android:screenOrientation="portrait"
             android:theme="@style/FullscreenTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -120,8 +120,8 @@
             android:name=".Info"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_info"
-            android:screenOrientation="portrait"
             android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/FullscreenTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -132,7 +132,17 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_placement"
             android:screenOrientation="portrait"
-            android:theme="@style/FullscreenTheme"></activity>
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".MadLab"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_mad_lab"
+            android:parentActivityName=".Subjects"
+            android:theme="@style/FullscreenTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="me.lionelfaber.smileappofflinenew.Subjects" />
+        </activity>
     </application>
 
 </manifest>
